@@ -1,0 +1,6 @@
+*.pdf
+*.o
+*.pdf
+**/.idea/
+*.org
+*.out
