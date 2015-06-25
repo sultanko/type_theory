@@ -16,6 +16,8 @@ private:
     std::string stringExpr;
     std::set<std::string> variables;
 public:
+    virtual std::string toTypeString() const override;
+
     Function(const std::string& name, const std::vector<tptr>& terms);
 
 

@@ -21,6 +21,7 @@ class Term
 public:
     virtual bool isEqual(const tptr& other) const = 0;
     virtual const std::string & toString() const = 0;
+    virtual std::string toTypeString() const = 0;
     virtual tptr substitute(const std::string& oldVar, const tptr& replacement) const = 0;
     virtual const std::set<std::string>& getVariables() const = 0;
 };

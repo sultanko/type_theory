@@ -34,3 +34,8 @@ const std::set<std::string>& TermVariable::getVariables() const
 {
     return variables;
 }
+
+std::string TermVariable::toTypeString() const
+{
+    return varName;
+}

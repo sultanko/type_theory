@@ -68,3 +68,12 @@ const std::set<std::string>& Function::getVariables() const
 {
     return variables;
 }
+
+std::string Function::toTypeString() const
+{
+    if (terms.size() != 2)
+    {
+        throw std::runtime_error("invalid function to arrow");
+    }
+    return "(" + terms[0]->toTypeString() + "->" + terms[1]->toTypeString() + ")";
+}

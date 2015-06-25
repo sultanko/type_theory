@@ -25,6 +25,8 @@ public:
 
     virtual const std::set<std::string>& getVariables() const override;
 
+    virtual std::string toTypeString() const override;
+
     virtual const std::string & toString() const override;
 };
 
